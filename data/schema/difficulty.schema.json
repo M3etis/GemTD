@@ -1,0 +1,12 @@
+{
+  "type": "object", "required": ["version", "default", "levels"],
+  "properties": {
+    "version": { "type": "integer" }, "default": { "type": "string" },
+    "levels": { "type": "array", "minItems": 1, "items": {
+      "type": "object", "required": ["id", "name_key", "desc_key", "hp_mult", "lives", "bounty_mult", "score_mult", "boss_leak_instant_defeat"],
+      "properties": { "id": { "type": "string" }, "name_key": { "type": "string" }, "desc_key": { "type": "string" },
+        "hp_mult": { "type": "number", "minimum": 0.1 }, "lives": { "type": "integer", "minimum": 1 }, "bounty_mult": { "type": "number" },
+        "score_mult": { "type": "number" }, "boss_leak_instant_defeat": { "type": "boolean" },
+        "hp_ramp_waves": { "type": "integer", "minimum": 0 } } } }
+  }
+}

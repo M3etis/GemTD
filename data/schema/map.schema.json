@@ -1,0 +1,13 @@
+{
+  "type": "object", "required": ["version", "id", "name_key", "width", "height", "entrance", "exit", "checkpoints", "no_build_radius", "diagonal_mode", "blocked"],
+  "properties": {
+    "version": { "type": "integer" }, "id": { "type": "string" }, "name_key": { "type": "string" },
+    "width": { "type": "integer", "minimum": 8, "maximum": 128 }, "height": { "type": "integer", "minimum": 8, "maximum": 128 },
+    "entrance": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "integer" } },
+    "exit": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "integer" } },
+    "checkpoints": { "type": "array", "minItems": 1, "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "integer" } } },
+    "no_build_radius": { "type": "integer", "minimum": 0 },
+    "diagonal_mode": { "type": "string", "enum": ["never", "only_if_no_obstacles", "at_least_one_walkable"] },
+    "blocked": { "type": "array", "items": { "type": "array", "items": { "type": "integer" } } }
+  }
+}

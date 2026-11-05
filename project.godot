@@ -1,0 +1,63 @@
+; Engine configuration file.
+; Gem Tower Defense — см. README.md и docs/DECISIONS.md
+
+config_version=5
+
+[application]
+
+config/name="Gem Tower Defense"
+config/description="Maze tower defense with gem drafting."
+config/version="2.4.0"
+run/main_scene="res://scenes/boot/boot.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://assets/icon.svg"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="GemTowerDefense"
+boot_splash/bg_color=Color(0.027, 0.031, 0.051, 1)
+boot_splash/show_image=false
+
+[autoload]
+
+Events="*res://autoload/events.gd"
+Balance="*res://autoload/balance.gd"
+Settings="*res://autoload/settings.gd"
+Audio="*res://autoload/audio.gd"
+Leaderboard="*res://autoload/leaderboard.gd"
+Save="*res://autoload/save.gd"
+Net="*res://autoload/net.gd"
+Game="*res://autoload/game.gd"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[gui]
+
+timers/tooltip_delay_sec=0.3
+
+theme/custom_font="res://assets/fonts/Inter.ttf"
+common/snap_controls_to_pixels=true
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://i18n/strings.en.translation", "res://i18n/strings.ru.translation")
+locale/fallback="en"
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+rendering_device/driver.macos="metal"
+rendering_device/fallback_to_opengl3=true
+anti_aliasing/quality/msaa_3d=2
+environment/defaults/default_clear_color=Color(0.027, 0.031, 0.051, 1)
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+textures/vram_compression/import_etc2_astc=true

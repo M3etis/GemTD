@@ -1,0 +1,15 @@
+{
+  "type": "object", "required": ["version", "levels", "luck_levels"],
+  "properties": {
+    "version": { "type": "integer" },
+    "levels": { "type": "array", "minItems": 1, "items": {
+      "type": "object", "required": ["level", "key", "roman", "damage_mult", "range_bonus", "speed_mult", "scale", "glow"],
+      "properties": { "level": { "type": "integer", "minimum": 1 }, "key": { "type": "string" }, "roman": { "type": "string" },
+        "damage_mult": { "type": "number", "minimum": 0 }, "range_bonus": { "type": "number" }, "speed_mult": { "type": "number", "minimum": 0.1 },
+        "scale": { "type": "number" }, "glow": { "type": "number" } } } },
+    "luck_levels": { "type": "array", "minItems": 1, "items": {
+      "type": "object", "required": ["level", "roman", "chances"],
+      "properties": { "level": { "type": "integer" }, "roman": { "type": "string" },
+        "chances": { "type": "array", "items": { "type": "number", "minimum": 0 } } } } }
+  }
+}

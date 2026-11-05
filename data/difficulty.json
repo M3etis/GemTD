@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "default": "normal",
+  "levels": [
+    {
+      "id": "easy",
+      "name_key": "DIFF_EASY",
+      "desc_key": "DIFF_EASY_DESC",
+      "hp_mult": 0.7,
+      "lives": 30,
+      "bounty_mult": 1.1,
+      "score_mult": 0.75,
+      "boss_leak_instant_defeat": false
+    },
+    {
+      "id": "normal",
+      "name_key": "DIFF_NORMAL",
+      "desc_key": "DIFF_NORMAL_DESC",
+      "hp_mult": 1.0,
+      "lives": 20,
+      "bounty_mult": 1.0,
+      "score_mult": 1.0,
+      "boss_leak_instant_defeat": false
+    },
+    {
+      "id": "hard",
+      "name_key": "DIFF_HARD",
+      "desc_key": "DIFF_HARD_DESC",
+      "hp_mult": 1.15,
+      "lives": 15,
+      "bounty_mult": 1.0,
+      "score_mult": 1.5,
+      "boss_leak_instant_defeat": false,
+      "hp_ramp_waves": 12
+    },
+    {
+      "id": "extreme",
+      "name_key": "DIFF_EXTREME",
+      "desc_key": "DIFF_EXTREME_DESC",
+      "hp_mult": 1.5,
+      "lives": 10,
+      "bounty_mult": 1.0,
+      "score_mult": 2.5,
+      "boss_leak_instant_defeat": true,
+      "hp_ramp_waves": 40
+    }
+  ]
+}

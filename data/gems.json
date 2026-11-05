@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "gems": [
+    {
+      "id": "ruby", "name_key": "GEM_RUBY", "role_key": "ROLE_RUBY", "silhouette": "needle",
+      "color": "#ff3b5c", "damage_type": "fire", "targets": "both",
+      "base_damage": 14.0, "attack_speed": 0.85, "range": 3.5,
+      "projectile": "bolt", "projectile_speed": 11.0,
+      "effects": { "empowered_every": [0, 0, 0, 0, 4], "empowered_mult": 3.0 }
+    },
+    {
+      "id": "sapphire", "name_key": "GEM_SAPPHIRE", "role_key": "ROLE_SAPPHIRE", "silhouette": "coil",
+      "color": "#3b82ff", "damage_type": "arcane", "targets": "both",
+      "base_damage": 7.0, "attack_speed": 0.8, "range": 3.5,
+      "projectile": "lightning", "projectile_speed": 0.0,
+      "effects": { "chain_targets": [2, 3, 4, 5, 6], "chain_falloff": 0.75, "chain_radius": 2.2 }
+    },
+    {
+      "id": "emerald", "name_key": "GEM_EMERALD", "role_key": "ROLE_EMERALD", "silhouette": "bud",
+      "color": "#22d37a", "damage_type": "nature", "targets": "both",
+      "base_damage": 4.0, "attack_speed": 1.0, "range": 3.5,
+      "projectile": "orb", "projectile_speed": 8.0,
+      "effects": {
+        "poison_dps": [3.0, 7.0, 15.0, 32.0, 70.0], "poison_duration": 4.0,
+        "poison_max_stacks": [2, 2, 3, 3, 4], "poison_regen_cut": 0.5,
+        "poison_spread_on_death": [0, 0, 0, 0, 1]
+      }
+    },
+    {
+      "id": "topaz", "name_key": "GEM_TOPAZ", "role_key": "ROLE_TOPAZ", "silhouette": "mortar",
+      "color": "#ffb020", "damage_type": "siege", "targets": "ground",
+      "base_damage": 9.0, "attack_speed": 0.7, "range": 3.0,
+      "projectile": "shell", "projectile_speed": 7.0,
+      "effects": { "splash_radius": [1.0, 1.2, 1.4, 1.7, 2.0], "splash_edge_mult": 0.5 }
+    },
+    {
+      "id": "amethyst", "name_key": "GEM_AMETHYST", "role_key": "ROLE_AMETHYST", "silhouette": "spear",
+      "color": "#b15cff", "damage_type": "pierce", "targets": "both",
+      "base_damage": 5.0, "attack_speed": 1.7, "range": 4.0,
+      "projectile": "needle", "projectile_speed": 14.0,
+      "effects": { "air_mult": [1.5, 1.75, 2.0, 2.25, 2.5] }
+    },
+    {
+      "id": "aquamarine", "name_key": "GEM_AQUAMARINE", "role_key": "ROLE_AQUAMARINE", "silhouette": "halo",
+      "color": "#3fe0e0", "damage_type": "frost", "targets": "both",
+      "base_damage": 4.0, "attack_speed": 1.1, "range": 3.5,
+      "projectile": "shard", "projectile_speed": 10.0,
+      "effects": { "slow": [0.15, 0.2, 0.25, 0.32, 0.4], "slow_duration": 2.0, "boss_slow_factor": 0.5 }
+    },
+    {
+      "id": "opal", "name_key": "GEM_OPAL", "role_key": "ROLE_OPAL", "silhouette": "lens",
+      "color": "#f4d6ff", "damage_type": "arcane", "targets": "both",
+      "base_damage": 3.0, "attack_speed": 0.8, "range": 3.0,
+      "projectile": "glint", "projectile_speed": 9.0,
+      "effects": {
+        "aura_attack_speed": [0.1, 0.15, 0.2, 0.25, 0.3], "aura_radius": 2.5,
+        "kill_gold": [0, 0, 0, 1, 2], "kill_gold_radius": 3.0,
+        "detect_radius": [3.0, 3.5, 4.0, 4.5, 5.0]
+      }
+    },
+    {
+      "id": "diamond", "name_key": "GEM_DIAMOND", "role_key": "ROLE_DIAMOND", "silhouette": "octahedron",
+      "color": "#dff4ff", "damage_type": "physical", "targets": "ground",
+      "base_damage": 16.0, "attack_speed": 0.7, "range": 3.5,
+      "projectile": "bolt", "projectile_speed": 12.0,
+      "effects": {
+        "crit_chance": [0.1, 0.13, 0.16, 0.2, 0.25], "crit_mult": [2.0, 2.0, 2.25, 2.5, 3.0],
+        "armor_ignore": [2.0, 4.0, 6.0, 8.0, 10.0]
+      }
+    }
+  ]
+}

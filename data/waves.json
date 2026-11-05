@@ -1,0 +1,1331 @@
+{
+  "version": 1,
+  "hp_formula": {
+    "base": 10.0,
+    "growth": 1.14,
+    "linear": 6.0,
+    "late": {
+      "from_wave": 42,
+      "growth": 1.05
+    }
+  },
+  "air_every": 4,
+  "boss_waves": [
+    10,
+    20,
+    30,
+    42,
+    52,
+    62
+  ],
+  "lengths": {
+    "default": 62,
+    "options": [
+      {
+        "waves": 20,
+        "finale_hp_mult": 0.45,
+        "finale_elite": true,
+        "finale_leak": 20,
+        "ramp_scale": 0.5
+      },
+      {
+        "waves": 42,
+        "finale_hp_mult": 0.8,
+        "finale_elite": true,
+        "finale_leak": 20,
+        "ramp_scale": 0.7
+      },
+      {
+        "waves": 62,
+        "finale_hp_mult": 1.0,
+        "finale_elite": false,
+        "finale_leak": 0,
+        "ramp_scale": 1.0
+      }
+    ]
+  },
+  "endless": {
+    "ref_from_wave": 43,
+    "count_growth": 0.15,
+    "armor_growth": 1.5,
+    "speed_growth": 0.04,
+    "speed_cap": 0.25
+  },
+  "waves": [
+    {
+      "id": 1,
+      "modifier": "none",
+      "groups": [
+        {
+          "type": "normal",
+          "count": 8,
+          "interval": 1.1,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "modifier": "rush",
+      "groups": [
+        {
+          "type": "fast",
+          "count": 12,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "modifier": "none",
+      "groups": [
+        {
+          "type": "normal",
+          "count": 14,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 10,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "modifier": "armored",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 10,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "modifier": "swarm",
+      "groups": [
+        {
+          "type": "swarm",
+          "count": 26,
+          "interval": 0.35,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "modifier": "rush",
+      "groups": [
+        {
+          "type": "fast",
+          "count": 16,
+          "interval": 0.6,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "normal",
+          "count": 6,
+          "interval": 0.9,
+          "delay": 4.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 10,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "regen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 8,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "normal",
+          "count": 10,
+          "interval": 0.7,
+          "delay": 2.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "modifier": "boss",
+      "groups": [
+        {
+          "type": "normal",
+          "count": 8,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "boss_stone",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 3.0,
+          "hp_mult": 24.0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "modifier": "none",
+      "groups": [
+        {
+          "type": "arcane_resistant",
+          "count": 14,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 14,
+          "interval": 0.85,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "regenerating",
+          "count": 12,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "fast",
+          "count": 8,
+          "interval": 0.6,
+          "delay": 3.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "thief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "modifier": "none",
+      "groups": [
+        {
+          "type": "shielded",
+          "count": 12,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "normal",
+          "count": 14,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "fast",
+          "count": 8,
+          "interval": 0.6,
+          "delay": 3.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 16,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "modifier": "armored",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 12,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "disarm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "modifier": "swarm",
+      "groups": [
+        {
+          "type": "swarm",
+          "count": 36,
+          "interval": 0.3,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "thief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "arcane_resistant",
+          "count": 10,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "fast",
+          "count": 6,
+          "interval": 0.7,
+          "delay": 2.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud"
+          ]
+        },
+        {
+          "type": "regenerating",
+          "count": 8,
+          "interval": 0.9,
+          "delay": 4.0,
+          "hp_mult": 1.0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "modifier": "boss",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 8,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "boss_sky",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 3.0,
+          "hp_mult": 9.0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "modifier": "armored",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 14,
+          "interval": 0.85,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "modifier": "none",
+      "groups": [
+        {
+          "type": "normal",
+          "count": 16,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "modifier": "rush",
+      "groups": [
+        {
+          "type": "fast",
+          "count": 18,
+          "interval": 0.55,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "ethereal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 16,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "refraction"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "shielded",
+          "count": 8,
+          "interval": 1.2,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "refraction"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "regenerating",
+          "count": 16,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "modifier": "swarm",
+      "groups": [
+        {
+          "type": "swarm",
+          "count": 40,
+          "interval": 0.28,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "rush"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 18,
+          "interval": 0.75,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion",
+            "regen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 10,
+          "interval": 1.1,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic",
+            "disarm"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "modifier": "boss_escort",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 6,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "boss_summoner",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 3.0,
+          "hp_mult": 26.0
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "splitter",
+          "count": 12,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening"
+          ]
+        },
+        {
+          "type": "fast",
+          "count": 6,
+          "interval": 0.7,
+          "delay": 5.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud",
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 20,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "refraction",
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "fast",
+          "count": 14,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "ethereal",
+            "blink"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "shielded",
+          "count": 16,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace",
+            "thief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "arcane_resistant",
+          "count": 18,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic",
+            "regen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 22,
+          "interval": 0.65,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening",
+            "refraction"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "modifier": "swarm",
+      "groups": [
+        {
+          "type": "swarm",
+          "count": 36,
+          "interval": 0.3,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "rush",
+            "evasion"
+          ]
+        },
+        {
+          "type": "normal",
+          "count": 6,
+          "interval": 1.0,
+          "delay": 4.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "blink",
+            "regen"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "splitter",
+          "count": 14,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace",
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 10,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace"
+          ],
+          "elite": true
+        },
+        {
+          "type": "fast",
+          "count": 12,
+          "interval": 0.6,
+          "delay": 4.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "blink"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 20,
+          "interval": 0.65,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening"
+          ]
+        },
+        {
+          "type": "flying",
+          "count": 3,
+          "interval": 1.5,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "modifier": "armored",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 20,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening"
+          ]
+        },
+        {
+          "type": "regenerating",
+          "count": 10,
+          "interval": 0.8,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "regen",
+            "hardening"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "modifier": "boss",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 8,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace"
+          ]
+        },
+        {
+          "type": "flying",
+          "count": 8,
+          "interval": 0.9,
+          "delay": 4.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion"
+          ]
+        },
+        {
+          "type": "boss_final",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 8.0,
+          "hp_mult": 12.0
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "shielded",
+          "count": 18,
+          "interval": 0.75,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "refraction",
+            "regen"
+          ]
+        },
+        {
+          "type": "fast",
+          "count": 10,
+          "interval": 0.55,
+          "delay": 5.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud",
+            "rush"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 16,
+          "interval": 0.65,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion"
+          ]
+        },
+        {
+          "type": "flying",
+          "count": 2,
+          "interval": 1.5,
+          "delay": 8.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "regen"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "splitter",
+          "count": 10,
+          "interval": 1.1,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "modifier": "swarm",
+      "groups": [
+        {
+          "type": "swarm",
+          "count": 44,
+          "interval": 0.25,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "rush",
+            "thief"
+          ]
+        },
+        {
+          "type": "regenerating",
+          "count": 8,
+          "interval": 0.9,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "modifier": "armored",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 22,
+          "interval": 0.65,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace",
+            "disarm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 18,
+          "interval": 0.6,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "refraction"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "arcane_resistant",
+          "count": 16,
+          "interval": 0.75,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud"
+          ]
+        },
+        {
+          "type": "normal",
+          "count": 6,
+          "interval": 0.9,
+          "delay": 5.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "blink"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "modifier": "rush",
+      "groups": [
+        {
+          "type": "fast",
+          "count": 30,
+          "interval": 0.4,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "ethereal",
+            "rush"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "shielded",
+          "count": 12,
+          "interval": 1.0,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "modifier": "boss",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 10,
+          "interval": 0.75,
+          "delay": 0.0,
+          "hp_mult": 1.0
+        },
+        {
+          "type": "boss_sky",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 4.0,
+          "hp_mult": 8.0,
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "regenerating",
+          "count": 14,
+          "interval": 0.8,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening",
+            "disarm"
+          ]
+        },
+        {
+          "type": "splitter",
+          "count": 8,
+          "interval": 1.0,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "modifier": "swarm",
+      "groups": [
+        {
+          "type": "swarm",
+          "count": 50,
+          "interval": 0.22,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion",
+            "regen"
+          ]
+        },
+        {
+          "type": "fast",
+          "count": 8,
+          "interval": 0.6,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "blink",
+            "thief"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "modifier": "elite",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 14,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace",
+            "antimagic"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 18,
+          "interval": 0.6,
+          "delay": 0.0,
+          "hp_mult": 0.75,
+          "traits": [
+            "hardening"
+          ]
+        },
+        {
+          "type": "flying",
+          "count": 2,
+          "interval": 1.5,
+          "delay": 8.0,
+          "hp_mult": 0.75,
+          "traits": [
+            "evasion"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "arcane_resistant",
+          "count": 18,
+          "interval": 0.7,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "refraction",
+            "blink"
+          ]
+        },
+        {
+          "type": "fast",
+          "count": 14,
+          "interval": 0.5,
+          "delay": 5.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "shroud",
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "regenerating",
+          "count": 14,
+          "interval": 0.85,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace"
+          ]
+        },
+        {
+          "type": "fast",
+          "count": 10,
+          "interval": 0.6,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "modifier": "mixed",
+      "groups": [
+        {
+          "type": "splitter",
+          "count": 16,
+          "interval": 0.85,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace",
+            "rush"
+          ]
+        },
+        {
+          "type": "shielded",
+          "count": 10,
+          "interval": 0.9,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "disarm"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "modifier": "air",
+      "groups": [
+        {
+          "type": "flying",
+          "count": 16,
+          "interval": 0.6,
+          "delay": 0.0,
+          "hp_mult": 0.65,
+          "traits": [
+            "refraction"
+          ]
+        },
+        {
+          "type": "flying",
+          "count": 2,
+          "interval": 1.5,
+          "delay": 8.0,
+          "hp_mult": 0.65,
+          "traits": [
+            "antimagic"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "modifier": "armored",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 24,
+          "interval": 0.6,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "hardening",
+            "carapace"
+          ]
+        },
+        {
+          "type": "arcane_resistant",
+          "count": 10,
+          "interval": 0.8,
+          "delay": 6.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "antimagic"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "modifier": "boss",
+      "groups": [
+        {
+          "type": "armored",
+          "count": 10,
+          "interval": 0.9,
+          "delay": 0.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "carapace"
+          ]
+        },
+        {
+          "type": "flying",
+          "count": 10,
+          "interval": 0.8,
+          "delay": 4.0,
+          "hp_mult": 1.0,
+          "traits": [
+            "evasion"
+          ]
+        },
+        {
+          "type": "boss_summoner",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 8.0,
+          "hp_mult": 5.0
+        },
+        {
+          "type": "boss_final",
+          "count": 1,
+          "interval": 0.0,
+          "delay": 22.0,
+          "hp_mult": 14.0
+        }
+      ]
+    }
+  ]
+}

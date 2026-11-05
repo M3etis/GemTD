@@ -1,0 +1,18 @@
+# Godot 4: кеш импорта и сгенерированные переводы (создаются при первом импорте)
+.godot/
+/android/
+*.translation
+
+# Сборки (build/.gdignore в репозитории: редактор не сканирует собранные .app)
+/build/*
+!/build/.gdignore
+*.app
+*.dmg
+
+# Служебное
+.DS_Store
+*.log
+*.tmp
+
+# Исходники ассетов (скачиваются заново по ссылкам из tools/bake_art_assets.gd)
+/art_src/

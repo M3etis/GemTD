@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "damage_types": ["physical", "pierce", "siege", "fire", "frost", "nature", "arcane", "pure"],
+  "armor_types": ["unarmored", "light", "medium", "heavy", "fortified", "ethereal", "boss"],
+  "matrix": {
+    "physical": { "unarmored": 1.0, "light": 1.0, "medium": 1.25, "heavy": 0.75, "fortified": 0.6, "ethereal": 0.5, "boss": 0.9 },
+    "pierce": { "unarmored": 1.5, "light": 1.5, "medium": 0.75, "heavy": 0.75, "fortified": 0.5, "ethereal": 1.0, "boss": 0.8 },
+    "siege": { "unarmored": 1.0, "light": 0.75, "medium": 1.0, "heavy": 1.25, "fortified": 1.6, "ethereal": 0.75, "boss": 0.9 },
+    "fire": { "unarmored": 1.25, "light": 1.25, "medium": 1.0, "heavy": 0.8, "fortified": 0.75, "ethereal": 1.25, "boss": 0.9 },
+    "frost": { "unarmored": 1.0, "light": 1.0, "medium": 1.0, "heavy": 1.0, "fortified": 0.75, "ethereal": 1.0, "boss": 0.8 },
+    "nature": { "unarmored": 1.25, "light": 1.0, "medium": 1.0, "heavy": 1.25, "fortified": 0.6, "ethereal": 0.75, "boss": 1.0 },
+    "arcane": { "unarmored": 1.0, "light": 1.0, "medium": 0.9, "heavy": 1.5, "fortified": 1.0, "ethereal": 1.75, "boss": 0.9 },
+    "pure": { "unarmored": 1.0, "light": 1.0, "medium": 1.0, "heavy": 1.0, "fortified": 1.0, "ethereal": 1.0, "boss": 1.0 }
+  },
+  "armor_formula": { "k": 0.06, "negative_base": 0.94 },
+  "colors": {
+    "physical": "#dff4ff", "pierce": "#b15cff", "siege": "#ffb020", "fire": "#ff3b5c",
+    "frost": "#3fe0e0", "nature": "#22d37a", "arcane": "#3b82ff", "pure": "#ffffff"
+  }
+}

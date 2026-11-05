@@ -1,0 +1,9 @@
+{
+  "type": "object", "required": ["version", "per_wave_points", "perfect_wave_points", "kill_points", "life_points", "speed_bonus"],
+  "properties": {
+    "version": { "type": "integer" }, "per_wave_points": { "type": "number" }, "perfect_wave_points": { "type": "number" },
+    "kill_points": { "type": "number" }, "life_points": { "type": "number" },
+    "speed_bonus": { "type": "object", "required": ["par_seconds_per_wave", "points_per_second_under_par"],
+      "properties": { "par_seconds_per_wave": { "type": "number" }, "points_per_second_under_par": { "type": "number" } } }
+  }
+}

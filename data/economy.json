@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "start_gold": 0,
+  "rocks_per_round": 5,
+  "luck_upgrade_costs": [
+    20,
+    50,
+    100,
+    160,
+    240,
+    350,
+    480,
+    650
+  ],
+  "kill_bounty_wave_growth": 0.1,
+  "wave_clear_gold": {
+    "base": 6,
+    "per_wave": 2
+  },
+  "perfect_wave_bonus": 4,
+  "countdown_seconds": 3.0,
+  "sim": {
+    "tick_rate": 30,
+    "max_ticks_per_frame": 96,
+    "spatial_bucket": 2.0,
+    "checksum_every_waves": 1,
+    "dot_ticks": 3
+  },
+  "gem_value": [
+    4,
+    10,
+    24,
+    55,
+    120
+  ],
+  "sell_refund": 0.6,
+  "break_wall": {
+    "base": 4,
+    "step": 2
+  },
+  "buy_life": {
+    "base": 15,
+    "step": 10
+  },
+  "slate_move": {
+    "base": 5,
+    "step": 5
+  },
+  "tower_move": {
+    "base": 10,
+    "step": 10
+  },
+  "polish": {
+    "max_level": 10,
+    "damage_per_level": 0.03,
+    "base_cost": 40,
+    "growth": 1.55
+  },
+  "mvp": {
+    "damage_per_stack": 0.04,
+    "max_stacks": 10,
+    "aura_damage": 0.15,
+    "aura_radius": 2.0
+  },
+  "elite": {
+    "hp_mult": 2.2,
+    "bounty_mult": 2.0,
+    "leak_mult": 2,
+    "armor_bonus": 2.0,
+    "size_mult": 1.25
+  },
+  "damage_test": {
+    "duration": 60.0,
+    "wave": 42
+  },
+  "special_merge": {
+    "inherit": 0.75,
+    "max_slow": 0.75
+  }
+}

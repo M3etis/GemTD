@@ -1,0 +1,152 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "slates"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "slates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name_key",
+          "role_key",
+          "color",
+          "kind",
+          "recipe",
+          "partners",
+          "from",
+          "targets",
+          "target_mode",
+          "radius",
+          "interval",
+          "damage",
+          "damage_type",
+          "effects",
+          "value",
+          "sfx"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name_key": {
+            "type": "string"
+          },
+          "role_key": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "base",
+              "combo"
+            ]
+          },
+          "recipe": {
+            "type": "object",
+            "required": [
+              "gem",
+              "quality"
+            ],
+            "properties": {
+              "gem": {
+                "type": "string"
+              },
+              "quality": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "partners": {
+            "type": "array",
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "required": [
+                "gem",
+                "quality"
+              ],
+              "properties": {
+                "gem": {
+                  "type": "string"
+                },
+                "quality": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "from": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+              "type": "string"
+            }
+          },
+          "targets": {
+            "type": "string",
+            "enum": [
+              "ground",
+              "both",
+              "air"
+            ]
+          },
+          "target_mode": {
+            "type": "string",
+            "enum": [
+              "single",
+              "all"
+            ]
+          },
+          "radius": {
+            "type": "number",
+            "minimum": 0.5
+          },
+          "interval": {
+            "type": "number",
+            "minimum": 0.1
+          },
+          "damage": {
+            "type": "number",
+            "minimum": 0
+          },
+          "damage_type": {
+            "type": "string",
+            "enum": [
+              "physical",
+              "pierce",
+              "siege",
+              "fire",
+              "frost",
+              "nature",
+              "arcane",
+              "pure"
+            ]
+          },
+          "effects": {
+            "type": "object"
+          },
+          "value": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sfx": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

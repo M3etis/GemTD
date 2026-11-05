@@ -1,0 +1,219 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "hp_formula",
+    "air_every",
+    "boss_waves",
+    "waves",
+    "lengths",
+    "endless"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "hp_formula": {
+      "type": "object",
+      "required": [
+        "base",
+        "growth",
+        "linear"
+      ],
+      "properties": {
+        "base": {
+          "type": "number"
+        },
+        "growth": {
+          "type": "number"
+        },
+        "linear": {
+          "type": "number"
+        },
+        "late": {
+          "type": "object",
+          "required": [
+            "from_wave",
+            "growth"
+          ],
+          "properties": {
+            "from_wave": {
+              "type": "integer",
+              "minimum": 2
+            },
+            "growth": {
+              "type": "number",
+              "minimum": 1.0
+            }
+          }
+        }
+      }
+    },
+    "air_every": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "boss_waves": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "lengths": {
+      "type": "object",
+      "required": [
+        "default",
+        "options"
+      ],
+      "properties": {
+        "default": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "options": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "waves",
+              "finale_hp_mult",
+              "finale_elite",
+              "finale_leak",
+              "ramp_scale"
+            ],
+            "properties": {
+              "waves": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "finale_hp_mult": {
+                "type": "number",
+                "minimum": 0.1
+              },
+              "finale_elite": {
+                "type": "boolean"
+              },
+              "finale_leak": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "ramp_scale": {
+                "type": "number",
+                "minimum": 0.05
+              }
+            }
+          }
+        }
+      }
+    },
+    "endless": {
+      "type": "object",
+      "required": [
+        "ref_from_wave",
+        "count_growth",
+        "armor_growth",
+        "speed_growth",
+        "speed_cap"
+      ],
+      "properties": {
+        "ref_from_wave": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "count_growth": {
+          "type": "number",
+          "minimum": 0
+        },
+        "armor_growth": {
+          "type": "number",
+          "minimum": 0
+        },
+        "speed_growth": {
+          "type": "number",
+          "minimum": 0
+        },
+        "speed_cap": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "waves": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "modifier",
+          "groups"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "modifier": {
+            "type": "string",
+            "enum": [
+              "none",
+              "rush",
+              "air",
+              "armored",
+              "swarm",
+              "mixed",
+              "elite",
+              "boss",
+              "boss_escort"
+            ]
+          },
+          "groups": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "type",
+                "count",
+                "interval",
+                "delay",
+                "hp_mult"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "interval": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "delay": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "hp_mult": {
+                  "type": "number",
+                  "minimum": 0.01
+                },
+                "traits": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "elite": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

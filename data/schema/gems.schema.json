@@ -1,0 +1,19 @@
+{
+  "type": "object", "required": ["version", "gems"],
+  "properties": {
+    "version": { "type": "integer" },
+    "gems": { "type": "array", "minItems": 1, "items": {
+      "type": "object",
+      "required": ["id", "name_key", "role_key", "silhouette", "color", "damage_type", "targets", "base_damage", "attack_speed", "range", "projectile", "projectile_speed", "effects"],
+      "properties": {
+        "id": { "type": "string" }, "name_key": { "type": "string" }, "role_key": { "type": "string" },
+        "silhouette": { "type": "string" }, "color": { "type": "string" },
+        "damage_type": { "type": "string", "enum": ["physical", "pierce", "siege", "fire", "frost", "nature", "arcane", "pure"] },
+        "targets": { "type": "string", "enum": ["ground", "both", "air"] },
+        "base_damage": { "type": "number", "minimum": 0 }, "attack_speed": { "type": "number", "minimum": 0.05 },
+        "range": { "type": "number", "minimum": 0.5 }, "projectile": { "type": "string" },
+        "projectile_speed": { "type": "number", "minimum": 0 }, "effects": { "type": "object" }
+      }
+    } }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object", "required": ["version", "damage_types", "armor_types", "matrix", "armor_formula", "colors"],
+  "properties": {
+    "version": { "type": "integer" },
+    "damage_types": { "type": "array", "items": { "type": "string" } },
+    "armor_types": { "type": "array", "items": { "type": "string" } },
+    "matrix": { "type": "object", "additionalProperties": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 4 } } },
+    "armor_formula": { "type": "object", "required": ["k", "negative_base"], "properties": { "k": { "type": "number" }, "negative_base": { "type": "number" } } },
+    "colors": { "type": "object", "additionalProperties": { "type": "string" } }
+  }
+}

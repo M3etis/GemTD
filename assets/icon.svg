@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Иконка приложения: огранённый гем на тёмной плашке. Собственная работа проекта. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151a2e"/>
+      <stop offset="1" stop-color="#07080d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="512" cy="520" r="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7cc4ff" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#b388ff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#b388ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cc4ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2f6fb8" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="104" y="104" width="816" height="816" rx="182" fill="none" stroke="url(#rim)" stroke-width="8"/>
+  <circle cx="512" cy="520" r="360" fill="url(#glow)"/>
+  <!-- Корона: стол y=300, рундист y=430 -->
+  <g stroke="#e8f4ff" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round">
+    <polygon points="382,300 262,430 387,430" fill="#9fd8ff"/>
+    <polygon points="382,300 387,430 512,300" fill="#d6efff"/>
+    <polygon points="512,300 387,430 512,430" fill="#7cc4ff"/>
+    <polygon points="512,300 512,430 637,430" fill="#5aa6f0"/>
+    <polygon points="512,300 637,430 642,300" fill="#9b8cff"/>
+    <polygon points="642,300 637,430 762,430" fill="#7a5ee0"/>
+    <!-- Павильон: вершина (512, 800) -->
+    <polygon points="262,430 387,430 512,800" fill="#4f9be8"/>
+    <polygon points="387,430 512,430 512,800" fill="#3478d0"/>
+    <polygon points="512,430 637,430 512,800" fill="#6b4fd0"/>
+    <polygon points="637,430 762,430 512,800" fill="#4a2fa8"/>
+  </g>
+  <!-- Блик -->
+  <path d="M408 236 L420 274 L458 286 L420 298 L408 336 L396 298 L358 286 L396 274 Z" fill="#ffffff" opacity="0.92"/>
+  <circle cx="408" cy="286" r="10" fill="#ffffff"/>
+</svg>

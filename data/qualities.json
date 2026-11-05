@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "levels": [
+    { "level": 1, "key": "Q_SHARD", "roman": "I", "damage_mult": 1.0, "range_bonus": 0.0, "speed_mult": 1.0, "scale": 0.78, "glow": 0.8 },
+    { "level": 2, "key": "Q_ROUGH", "roman": "II", "damage_mult": 2.3, "range_bonus": 0.25, "speed_mult": 1.05, "scale": 0.86, "glow": 1.1 },
+    { "level": 3, "key": "Q_CUT", "roman": "III", "damage_mult": 5.2, "range_bonus": 0.5, "speed_mult": 1.1, "scale": 0.95, "glow": 1.5 },
+    { "level": 4, "key": "Q_RADIANT", "roman": "IV", "damage_mult": 11.5, "range_bonus": 0.75, "speed_mult": 1.15, "scale": 1.05, "glow": 2.0 },
+    { "level": 5, "key": "Q_PRISMATIC", "roman": "V", "damage_mult": 25.0, "range_bonus": 1.0, "speed_mult": 1.25, "scale": 1.15, "glow": 2.8 }
+  ],
+  "luck_levels": [
+    { "level": 1, "roman": "I", "chances": [100, 0, 0, 0, 0] },
+    { "level": 2, "roman": "II", "chances": [70, 30, 0, 0, 0] },
+    { "level": 3, "roman": "III", "chances": [60, 30, 10, 0, 0] },
+    { "level": 4, "roman": "IV", "chances": [50, 30, 20, 0, 0] },
+    { "level": 5, "roman": "V", "chances": [40, 30, 20, 10, 0] },
+    { "level": 6, "roman": "VI", "chances": [30, 30, 30, 10, 0] },
+    { "level": 7, "roman": "VII", "chances": [20, 30, 30, 20, 0] },
+    { "level": 8, "roman": "VIII", "chances": [10, 30, 30, 30, 0] },
+    { "level": 9, "roman": "IX", "chances": [0, 30, 30, 30, 10] }
+  ]
+}

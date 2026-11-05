@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "per_wave_points": 100,
+  "perfect_wave_points": 50,
+  "kill_points": 1,
+  "life_points": 250,
+  "speed_bonus": { "par_seconds_per_wave": 45.0, "points_per_second_under_par": 5.0 }
+}

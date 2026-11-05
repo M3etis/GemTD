@@ -1,0 +1,269 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "start_gold",
+    "rocks_per_round",
+    "luck_upgrade_costs",
+    "kill_bounty_wave_growth",
+    "wave_clear_gold",
+    "perfect_wave_bonus",
+    "countdown_seconds",
+    "sim",
+    "gem_value",
+    "sell_refund",
+    "break_wall",
+    "buy_life",
+    "slate_move",
+    "tower_move",
+    "polish",
+    "mvp",
+    "elite",
+    "damage_test",
+    "special_merge"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "start_gold": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rocks_per_round": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "luck_upgrade_costs": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "kill_bounty_wave_growth": {
+      "type": "number"
+    },
+    "wave_clear_gold": {
+      "type": "object",
+      "required": [
+        "base",
+        "per_wave"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer"
+        },
+        "per_wave": {
+          "type": "integer"
+        }
+      }
+    },
+    "perfect_wave_bonus": {
+      "type": "integer"
+    },
+    "countdown_seconds": {
+      "type": "number"
+    },
+    "sim": {
+      "type": "object",
+      "required": [
+        "tick_rate",
+        "max_ticks_per_frame",
+        "spatial_bucket",
+        "checksum_every_waves"
+      ],
+      "properties": {
+        "tick_rate": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 120
+        },
+        "max_ticks_per_frame": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "spatial_bucket": {
+          "type": "number",
+          "minimum": 0.5
+        },
+        "checksum_every_waves": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "gem_value": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "sell_refund": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "break_wall": {
+      "type": "object",
+      "required": [
+        "base",
+        "step"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "buy_life": {
+      "type": "object",
+      "required": [
+        "base",
+        "step"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "slate_move": {
+      "type": "object",
+      "required": [
+        "base",
+        "step"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "tower_move": {
+      "type": "object",
+      "required": [
+        "base",
+        "step"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "polish": {
+      "type": "object",
+      "required": [
+        "max_level",
+        "damage_per_level",
+        "base_cost",
+        "growth"
+      ],
+      "properties": {
+        "max_level": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "damage_per_level": {
+          "type": "number",
+          "minimum": 0
+        },
+        "base_cost": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "growth": {
+          "type": "number",
+          "minimum": 1.0
+        }
+      }
+    },
+    "mvp": {
+      "type": "object",
+      "required": [
+        "damage_per_stack",
+        "max_stacks",
+        "aura_damage",
+        "aura_radius"
+      ],
+      "properties": {
+        "damage_per_stack": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max_stacks": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "aura_damage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "aura_radius": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "elite": {
+      "type": "object",
+      "required": [
+        "hp_mult",
+        "bounty_mult",
+        "leak_mult",
+        "armor_bonus",
+        "size_mult"
+      ]
+    },
+    "damage_test": {
+      "type": "object",
+      "required": [
+        "duration",
+        "wave"
+      ]
+    },
+    "special_merge": {
+      "type": "object",
+      "required": [
+        "inherit",
+        "max_slow"
+      ],
+      "properties": {
+        "inherit": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "max_slow": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

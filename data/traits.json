@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "rules": {
+    "boss_cc_factor": 0.5,
+    "split_offset": 0.35,
+    "disarm_recheck": 0.25,
+    "summon_offset": 0.4,
+    "summon_max_alive": 40
+  },
+  "traits": {
+    "rush": {
+      "icon": "rush",
+      "hp_threshold": 0.5,
+      "speed_mult": 2.0,
+      "duration": 2.0,
+      "name_key": "TR_RUSH",
+      "desc_key": "TR_RUSH_DESC",
+      "counter_key": "TR_RUSH_COUNTER"
+    },
+    "blink": {
+      "icon": "bolt",
+      "interval": 6.0,
+      "distance": 3.0,
+      "name_key": "TR_BLINK",
+      "desc_key": "TR_BLINK_DESC",
+      "counter_key": "TR_BLINK_COUNTER"
+    },
+    "regen": {
+      "icon": "heart",
+      "pct_per_sec": 0.02,
+      "name_key": "TR_REGEN",
+      "desc_key": "TR_REGEN_DESC",
+      "counter_key": "TR_REGEN_COUNTER"
+    },
+    "evasion": {
+      "icon": "wing",
+      "chance": 0.2,
+      "types": [
+        "physical",
+        "pierce"
+      ],
+      "name_key": "TR_EVASION",
+      "desc_key": "TR_EVASION_DESC",
+      "counter_key": "TR_EVASION_COUNTER"
+    },
+    "antimagic": {
+      "icon": "shield",
+      "immune": [
+        "arcane"
+      ],
+      "cc_immune": true,
+      "name_key": "TR_ANTIMAGIC",
+      "desc_key": "TR_ANTIMAGIC_DESC",
+      "counter_key": "TR_ANTIMAGIC_COUNTER"
+    },
+    "ethereal": {
+      "icon": "sparkle",
+      "immune": [
+        "physical"
+      ],
+      "cc_immune": false,
+      "name_key": "TR_ETHEREAL",
+      "desc_key": "TR_ETHEREAL_DESC",
+      "counter_key": "TR_ETHEREAL_COUNTER"
+    },
+    "refraction": {
+      "icon": "shield",
+      "charges": 4,
+      "name_key": "TR_REFRACTION",
+      "desc_key": "TR_REFRACTION_DESC",
+      "counter_key": "TR_REFRACTION_COUNTER"
+    },
+    "hardening": {
+      "icon": "armored",
+      "hits_per_armor": 5,
+      "max_bonus": 8.0,
+      "name_key": "TR_HARDENING",
+      "desc_key": "TR_HARDENING_DESC",
+      "counter_key": "TR_HARDENING_COUNTER"
+    },
+    "disarm": {
+      "icon": "close",
+      "radius": 1.5,
+      "duration": 2.0,
+      "cooldown": 7.0,
+      "name_key": "TR_DISARM",
+      "desc_key": "TR_DISARM_DESC",
+      "counter_key": "TR_DISARM_COUNTER"
+    },
+    "thief": {
+      "icon": "coin",
+      "gold_base": 4,
+      "gold_per_wave": 0.3,
+      "name_key": "TR_THIEF",
+      "desc_key": "TR_THIEF_DESC",
+      "counter_key": "TR_THIEF_COUNTER"
+    },
+    "shroud": {
+      "icon": "info",
+      "name_key": "TR_SHROUD",
+      "desc_key": "TR_SHROUD_DESC",
+      "counter_key": "TR_SHROUD_COUNTER",
+      "reveal_on_damage": 1.5,
+      "reveal_time": 2.5
+    },
+    "carapace": {
+      "icon": "armored",
+      "block_pct": 0.012,
+      "cleanse_interval": 5.0,
+      "name_key": "TR_CARAPACE",
+      "desc_key": "TR_CARAPACE_DESC",
+      "counter_key": "TR_CARAPACE_COUNTER"
+    }
+  }
+}

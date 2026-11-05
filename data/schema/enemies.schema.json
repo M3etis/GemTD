@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "archetypes"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "archetypes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "name_key",
+          "hp_mult",
+          "speed",
+          "armor_type",
+          "armor",
+          "bounty",
+          "leak_damage",
+          "flying",
+          "boss",
+          "size",
+          "color",
+          "mesh",
+          "resist",
+          "traits",
+          "shield_pct",
+          "split",
+          "abilities",
+          "immortal"
+        ],
+        "properties": {
+          "name_key": {
+            "type": "string"
+          },
+          "hp_mult": {
+            "type": "number",
+            "minimum": 0.01
+          },
+          "speed": {
+            "type": "number",
+            "minimum": 0.1
+          },
+          "armor_type": {
+            "type": "string"
+          },
+          "armor": {
+            "type": "number"
+          },
+          "bounty": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "leak_damage": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "flying": {
+            "type": "boolean"
+          },
+          "boss": {
+            "type": "boolean"
+          },
+          "size": {
+            "type": "number"
+          },
+          "color": {
+            "type": "string"
+          },
+          "mesh": {
+            "type": "string"
+          },
+          "resist": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "traits": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "shield_pct": {
+            "type": "number",
+            "minimum": 0
+          },
+          "split": {
+            "type": "object"
+          },
+          "abilities": {
+            "type": "object"
+          },
+          "immortal": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "rules",
+    "traits"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "traits": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "icon",
+          "name_key",
+          "desc_key",
+          "counter_key"
+        ],
+        "properties": {
+          "icon": {
+            "type": "string"
+          },
+          "name_key": {
+            "type": "string"
+          },
+          "desc_key": {
+            "type": "string"
+          },
+          "counter_key": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "object",
+      "required": [
+        "boss_cc_factor",
+        "split_offset",
+        "disarm_recheck",
+        "summon_offset",
+        "summon_max_alive"
+      ]
+    }
+  }
+}

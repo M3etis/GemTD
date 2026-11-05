@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "buses": [
+    "Music",
+    "SFX",
+    "UI",
+    "Ambience"
+  ],
+  "defaults": {
+    "bus": "SFX",
+    "volume_db": 0.0,
+    "pitch_jitter": 0.0,
+    "cooldown_ms": 0,
+    "max_voices": 4,
+    "loop": false,
+    "mode": "replace",
+    "fallback": ""
+  },
+  "events": {
+    "sfx/ui/hover": {
+      "bus": "UI",
+      "volume_db": -18,
+      "cooldown_ms": 35,
+      "max_voices": 2,
+      "pitch_jitter": 0.05
+    },
+    "sfx/ui/click": {
+      "bus": "UI",
+      "volume_db": -9,
+      "cooldown_ms": 30,
+      "max_voices": 3,
+      "pitch_jitter": 0.03
+    },
+    "sfx/ui/confirm": {
+      "bus": "UI",
+      "volume_db": -7
+    },
+    "sfx/ui/cancel": {
+      "bus": "UI",
+      "volume_db": -9
+    },
+    "sfx/ui/error": {
+      "bus": "UI",
+      "volume_db": -9,
+      "cooldown_ms": 120
+    },
+    "sfx/ui/panel_open": {
+      "bus": "UI",
+      "volume_db": -13
+    },
+    "sfx/ui/panel_close": {
+      "bus": "UI",
+      "volume_db": -13
+    },
+    "sfx/ui/toast": {
+      "bus": "UI",
+      "volume_db": -11,
+      "cooldown_ms": 200
+    },
+    "sfx/ui/tab_switch": {
+      "bus": "UI",
+      "volume_db": -13
+    },
+    "sfx/build/rock_place": {
+      "volume_db": -5,
+      "pitch_jitter": 0.06,
+      "max_voices": 3
+    },
+    "sfx/build/invalid": {
+      "volume_db": -9,
+      "cooldown_ms": 150
+    },
+    "sfx/build/reveal/q1": {
+      "volume_db": -5,
+      "max_voices": 3
+    },
+    "sfx/build/reveal/q2": {
+      "volume_db": -5,
+      "max_voices": 3
+    },
+    "sfx/build/reveal/q3": {
+      "volume_db": -5,
+      "max_voices": 3
+    },
+    "sfx/build/reveal/q4": {
+      "volume_db": -3,
+      "max_voices": 3
+    },
+    "sfx/build/reveal/q5": {
+      "volume_db": -3,
+      "max_voices": 3
+    },
+    "sfx/build/wall_form": {
+      "volume_db": -9,
+      "pitch_jitter": 0.08,
+      "max_voices": 4
+    },
+    "sfx/build/path_change": {
+      "volume_db": -16,
+      "cooldown_ms": 120,
+      "max_voices": 1
+    },
+    "sfx/choose/keep": {
+      "volume_db": -4
+    },
+    "sfx/gems/ruby/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/ruby/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/sapphire/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/sapphire/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/emerald/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/emerald/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/topaz/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/topaz/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/amethyst/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/amethyst/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/aquamarine/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/aquamarine/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/opal/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/opal/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/gems/diamond/attack": {
+      "volume_db": -15,
+      "cooldown_ms": 45,
+      "max_voices": 5,
+      "pitch_jitter": 0.08
+    },
+    "sfx/gems/diamond/impact": {
+      "volume_db": -17,
+      "cooldown_ms": 40,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/status/crit": {
+      "volume_db": -9,
+      "cooldown_ms": 90,
+      "max_voices": 2
+    },
+    "sfx/enemies/normal/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/enemies/fast/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/enemies/armored/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/enemies/flying/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/enemies/swarm/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1
+    },
+    "sfx/boss/warning": {
+      "volume_db": -3
+    },
+    "sfx/boss/spawn": {
+      "volume_db": -4
+    },
+    "sfx/boss/death": {
+      "volume_db": -2
+    },
+    "sfx/waves/start": {
+      "volume_db": -6
+    },
+    "sfx/waves/clear": {
+      "volume_db": -6
+    },
+    "sfx/waves/perfect": {
+      "volume_db": -6
+    },
+    "sfx/waves/air_warning": {
+      "volume_db": -6
+    },
+    "sfx/waves/countdown": {
+      "volume_db": -9
+    },
+    "sfx/economy/gold_gain": {
+      "volume_db": -13,
+      "cooldown_ms": 70,
+      "max_voices": 2,
+      "pitch_jitter": 0.04
+    },
+    "sfx/economy/quality_up": {
+      "volume_db": -6
+    },
+    "sfx/game/life_lost": {
+      "volume_db": -5,
+      "cooldown_ms": 100,
+      "max_voices": 2
+    },
+    "sfx/game/victory": {
+      "volume_db": -3
+    },
+    "sfx/game/defeat": {
+      "volume_db": -3
+    },
+    "sfx/game/new_record": {
+      "volume_db": -3
+    },
+    "ambience/arena": {
+      "bus": "Ambience",
+      "volume_db": -12,
+      "loop": true,
+      "max_voices": 1,
+      "optional": true
+    },
+    "sfx/choose/combine_x2": {
+      "volume_db": -4
+    },
+    "sfx/choose/combine_x4": {
+      "volume_db": -3
+    },
+    "sfx/choose/forge_onehit": {
+      "volume_db": -2
+    },
+    "sfx/choose/forge_collect": {
+      "volume_db": -2
+    },
+    "sfx/build/wall_break": {
+      "volume_db": -6,
+      "pitch_jitter": 0.06
+    },
+    "sfx/economy/sell": {
+      "volume_db": -8
+    },
+    "sfx/economy/buy_life": {
+      "volume_db": -6
+    },
+    "sfx/economy/mvp": {
+      "volume_db": -6
+    },
+    "sfx/specials/beacon_lens/upgrade": {
+      "volume_db": -4
+    },
+    "sfx/specials/cinder_crown/upgrade": {
+      "volume_db": -4
+    },
+    "sfx/specials/skypiercer/upgrade": {
+      "volume_db": -4
+    },
+    "sfx/specials/frostwell/upgrade": {
+      "volume_db": -4
+    },
+    "sfx/specials/blightbloom/upgrade": {
+      "volume_db": -4
+    },
+    "sfx/specials/cinder_crown/attack": {
+      "volume_db": -20,
+      "cooldown_ms": 220,
+      "max_voices": 2,
+      "pitch_jitter": 0.1
+    },
+    "sfx/specials/cinder_crown/ability": {
+      "volume_db": -5,
+      "max_voices": 2
+    },
+    "sfx/specials/frostwell/attack": {
+      "volume_db": -20,
+      "cooldown_ms": 400,
+      "max_voices": 2,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/frostwell/ability": {
+      "volume_db": -12,
+      "cooldown_ms": 80,
+      "max_voices": 3,
+      "pitch_jitter": 0.1
+    },
+    "sfx/specials/skypiercer/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08,
+      "fallback": "sfx/gems/amethyst/attack"
+    },
+    "sfx/specials/skypiercer/impact": {
+      "volume_db": -15,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/gems/amethyst/impact"
+    },
+    "sfx/specials/blightbloom/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 60,
+      "max_voices": 3,
+      "pitch_jitter": 0.08,
+      "fallback": "sfx/gems/emerald/attack"
+    },
+    "sfx/specials/blightbloom/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 60,
+      "max_voices": 3,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/gems/emerald/impact"
+    },
+    "sfx/specials/blightbloom/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 3,
+      "pitch_jitter": 0.1
+    },
+    "sfx/specials/rust_obelisk/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/rust_obelisk/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/rust_obelisk/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/rust_obelisk/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/gravity_geode/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/gravity_geode/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/gravity_geode/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/gravity_geode/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/stormspire/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/stormspire/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/stormspire/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/razor_prism/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/razor_prism/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/razor_prism/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/razor_prism/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/quake_heart/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/quake_heart/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/quake_heart/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/quake_heart/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/gilded_idol/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/gilded_idol/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/gilded_idol/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/gilded_idol/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/warbanner_crystal/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/specials/titanbane/attack": {
+      "volume_db": -13,
+      "cooldown_ms": 50,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/titanbane/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/titanbane/ability": {
+      "volume_db": -8,
+      "cooldown_ms": 120,
+      "max_voices": 2
+    },
+    "sfx/specials/titanbane/upgrade": {
+      "volume_db": -6
+    },
+    "sfx/enemies/arcane_resistant/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/death"
+    },
+    "sfx/enemies/regenerating/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/death"
+    },
+    "sfx/enemies/shielded/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/death"
+    },
+    "sfx/enemies/splitter/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/death"
+    },
+    "sfx/enemies/splitling/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/death"
+    },
+    "sfx/enemies/minion/death": {
+      "volume_db": -13,
+      "cooldown_ms": 30,
+      "max_voices": 5,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/death"
+    },
+    "sfx/traits/rush": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/blink": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/evasion": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/antimagic": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/ethereal": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/refraction": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/hardening": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/carapace": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/disarm": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/traits/thief": {
+      "volume_db": -12,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.06
+    },
+    "sfx/boss/phase_change": {
+      "volume_db": -4
+    },
+    "sfx/boss/summon": {
+      "volume_db": -7,
+      "cooldown_ms": 400
+    },
+    "sfx/status/stun": {
+      "volume_db": -11,
+      "cooldown_ms": 80,
+      "max_voices": 3
+    },
+    "sfx/status/armor_break": {
+      "volume_db": -9,
+      "cooldown_ms": 80,
+      "max_voices": 3
+    },
+    "sfx/economy/gold_stolen": {
+      "volume_db": -7,
+      "cooldown_ms": 200
+    },
+    "sfx/economy/golden": {
+      "volume_db": -8,
+      "cooldown_ms": 150
+    },
+    "sfx/game/damage_test_start": {
+      "volume_db": -4
+    },
+    "sfx/game/damage_test_end": {
+      "volume_db": -4
+    },
+    "sfx/net/match_start": {
+      "volume_db": -4
+    },
+    "sfx/net/player_joined": {
+      "volume_db": -8
+    },
+    "sfx/net/player_left": {
+      "volume_db": -8
+    },
+    "sfx/net/ready": {
+      "volume_db": -9
+    },
+    "sfx/net/opponent_eliminated": {
+      "volume_db": -6
+    },
+    "sfx/status/poison_tick": {
+      "volume_db": -16,
+      "cooldown_ms": 160,
+      "max_voices": 2,
+      "pitch_jitter": 0.1
+    },
+    "sfx/status/slow_apply": {
+      "volume_db": -15,
+      "cooldown_ms": 160,
+      "max_voices": 2,
+      "pitch_jitter": 0.08
+    },
+    "sfx/specials/stormspire/impact": {
+      "volume_db": -14,
+      "cooldown_ms": 40,
+      "max_voices": 4,
+      "pitch_jitter": 0.08,
+      "fallback": "sfx/gems/sapphire/impact"
+    },
+    "sfx/specials/cinder_crown/impact": {
+      "volume_db": -12,
+      "cooldown_ms": 80,
+      "max_voices": 3,
+      "fallback": "sfx/gems/ruby/impact"
+    },
+    "sfx/enemies/normal/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": ""
+    },
+    "sfx/enemies/normal/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": ""
+    },
+    "sfx/enemies/fast/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/fast/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/armored/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/armored/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/flying/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/flying/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/swarm/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/swarm/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/arcane_resistant/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/arcane_resistant/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/regenerating/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/regenerating/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/shielded/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/shielded/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/splitter/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/splitter/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/splitling/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/splitling/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "sfx/enemies/minion/spawn": {
+      "volume_db": -20,
+      "cooldown_ms": 140,
+      "max_voices": 2,
+      "pitch_jitter": 0.1,
+      "fallback": "sfx/enemies/normal/spawn"
+    },
+    "sfx/enemies/minion/hurt": {
+      "volume_db": -21,
+      "cooldown_ms": 90,
+      "max_voices": 3,
+      "pitch_jitter": 0.12,
+      "fallback": "sfx/enemies/normal/hurt"
+    },
+    "music/menu": {
+      "bus": "Music",
+      "volume_db": -6,
+      "loop": true
+    },
+    "music/build": {
+      "bus": "Music",
+      "volume_db": -6,
+      "loop": true
+    },
+    "music/combat": {
+      "bus": "Music",
+      "volume_db": -6,
+      "loop": true
+    },
+    "music/boss": {
+      "bus": "Music",
+      "volume_db": -6,
+      "loop": true
+    },
+    "music/victory": {
+      "bus": "Music",
+      "volume_db": -6,
+      "loop": false
+    },
+    "music/defeat": {
+      "bus": "Music",
+      "volume_db": -6,
+      "loop": false
+    }
+  }
+}
